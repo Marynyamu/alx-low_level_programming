@@ -1,18 +1,16 @@
 #include <stdio.h>
 /**
- * main - print all single digits of base 10 starting from 0
- *	- not allowed to use char
+ * main - print lowecase alphabets in reverse
  * Return: 0
  */
 int main(void)
 {
-	int number = 0;
+	int k;
 
-	while (number < 10)
+	for (k = 0; k <= 10; k++)
+
 	{
-		/* in ASCII, 48 is 0 */
-		putchar(48 + number);
-		number++;
+		putchar(k + '0');
 	}
 
 	putchar('\n');
