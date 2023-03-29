@@ -1,17 +1,27 @@
 #include "main.h"
-
 /**
- * *_strcat - appends a string to another
- * overwrite the terminating null byte
- * @dest: to be appended into
- * @src: string to copy from
- * Return: dest after appending
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int j;
 
-	for (i = 0 ; i < n ; i++)
-		dest[i] = src[i];
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
 	return (dest);
 }
