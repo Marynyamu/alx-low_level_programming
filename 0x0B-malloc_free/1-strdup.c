@@ -16,7 +16,7 @@
  * 3.  We allocate memory for the copy of the string.
  * 4.  We check if the memory was allocated.  If it wasn’t, we return NULL.
  * 5.  We loop through the string again,
- * 	 this time copying the string into the new memory.
+ * 	this time copying the string into the new memory.
  * 6.  We add a null terminator to the end of the string.
  * 7.  We return the copy of the string.
  *
